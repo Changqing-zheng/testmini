@@ -1,13 +1,18 @@
-// pages/MyInterview/MyInterview.js
+import Dialog from '../../miniprogram_npm/vant-weapp/dialog/dialog'
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
 
   },
-
+  showDialog(){
+    Dialog.alert({
+      message: '拒绝理由，拒绝理由，拒绝理由，拒绝理由，拒绝理由，拒绝理由，拒绝理由'
+    }).then(() => {
+      // on close
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

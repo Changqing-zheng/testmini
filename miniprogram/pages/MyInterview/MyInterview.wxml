@@ -1,2 +1,51 @@
-<!--pages/MyInterview/MyInterview.wxml-->
-<text>pages/MyInterview/MyInterview.wxml</text>
+<van-dialog id="van-dialog" />
+<view class='interview'>
+  <view class='item'>
+    <view class='item-top'>
+      <view class='icon'>
+        <image mode='aspectFill' src='../../assets/images/icon.jpg'></image>
+      </view>
+      <view class='info'>
+        <text class='company'>阿里巴巴</text>
+        <text class='time'>2019-03-31 18:00</text>
+        <text class='arrow'>></text>
+      </view>
+    </view>
+    <view class='item-bottom'>
+      <text class='teacher'>教师：小冯老师</text>
+      <text class='status success'>状态：同意</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item-top'>
+      <view class='icon'>
+        <image mode='aspectFill' src='../../assets/images/icon.jpg'></image>
+      </view>
+      <view class='info'>
+        <text class='company'>阿里巴巴</text>
+        <text class='time'>2019-03-31 18:00</text>
+        <text class='arrow'>></text>
+      </view>
+    </view>
+    <view class='item-bottom'>
+      <text class='teacher'>教师：单老师</text>
+      <text class='status reject' bindtap='showDialog'>状态：拒绝</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='item-top'>
+      <view class='icon'>
+        <image mode='aspectFill' src='../../assets/images/icon.jpg'></image>
+      </view>
+      <view class='info'>
+        <text class='company'>阿里巴巴</text>
+        <text class='time'>2019-03-31 18:00</text>
+        <text class='arrow'>></text>
+      </view>
+    </view>
+    <view class='item-bottom'>
+      <text class='teacher'>教师：吴老师</text>
+      <text class='status done'>状态：已完成</text>
+    </view>
+  </view>
+</view>

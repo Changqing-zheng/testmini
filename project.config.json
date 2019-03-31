@@ -10,7 +10,7 @@
 		"autoAudits": false,
 		"nodeModules": true
 	},
-	"appid": "wx670fbf9577a985f0",
+	"appid": "wxb72371a6bd3ea911",
 	"projectname": "testmini",
 	"libVersion": "2.2.5",
 	"condition": {
@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
@@ -42,6 +42,13 @@
 					"id": -1,
 					"name": "ProjectManagement",
 					"pathName": "pages/ProjectManagement/ProjectManagement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "MyInterview",
+					"pathName": "pages/MyInterview/MyInterview",
 					"scene": null
 				}
 			]

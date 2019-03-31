@@ -1,1 +1,64 @@
-/* pages/MyInterview/MyInterview.wxss */
+/* writed by cheny 2019-04-01 0:06 */
+.item {
+  margin: 10rpx;
+  padding: 20rpx 10rpx;
+  border: 1rpx solid #E5E5E5;
+  box-shadow: 0 10rpx 6rpx rgba(248,248,248,.6);
+}
+.item-top {
+  display: flex;
+}
+.item-top .icon {
+  width: 150rpx;
+  height: 150rpx;
+  
+}
+.item-top .icon image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  
+}
+.item-top .info {
+  flex: 1;
+  position: relative
+}
+.info text {
+  display: block;
+}
+.info text.arrow {
+  position: absolute;
+  top: 50%;
+  right: 15rpx;
+  transform: translateY(-50%);
+  color: #C7C7CC;
+}
+.company,.time {
+  height: 75rpx;
+  line-height: 75rpx;
+}
+.time {
+  margin-top: -10rpx;
+}
+.item-bottom {
+  display: flex;
+  padding: 0 15rpx;
+}
+.item-bottom text {
+  flex: 1;
+  display: block;
+  color: #C7C7CC;
+}
+.item-bottom .teacher {
+  text-align: left;
+}
+.item-bottom .status {
+  text-align: right;
+}
+.item-bottom text.reject {
+ color: red;
+}
+.item-bottom text.success {
+ color: green;
+}
