@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "van-tabar": "vant-weapp/tabbar",
-    "van-tabar-item": "vant-weapp/tabbar-item"
+    "van-tabbar": "vant-weapp/tabbar",
+    "van-tabbar-item": "vant-weapp/tabbar-item",
+    "van-search": "vant-weapp/search",
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group"
   }
 }

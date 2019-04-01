@@ -9,5 +9,8 @@ Page({
   },
   onchange(event){
     console.log(event.detail);
+  },
+  onSearch(event){
+    console.log(111)
   }
 })
