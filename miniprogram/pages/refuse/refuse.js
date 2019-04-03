@@ -62,5 +62,12 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  cancelRefuse:function(){
+    wx.navigateBack();
+    console.log("cancel");
+  },
+  confirmRefuse: function () {
+    console.log("confirm");
   }
 })
