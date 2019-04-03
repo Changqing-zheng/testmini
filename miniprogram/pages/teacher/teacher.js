@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  teacherReject: function(){
+    console.log("reject")
+    wx.navigateTo({
+      url:"../refuse/refuse"
+      }      )
+  },
+  teacherAgree: function () {
+    console.log("agree")
+  },
 })
