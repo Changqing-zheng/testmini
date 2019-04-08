@@ -1,2 +1,20 @@
 <!--pages/GroupManagement/GroupManagement.wxml-->
-<text>pages/GroupManagement/GroupManagement.wxml</text>
+
+<view class="leftdel {{isleft? 'touch-active' : ''}}" bindtouchstart='touchstart' bindtouchmove='touchmove'>
+  <view class="member">
+    <cover-image class="profilePic" src="{{_url}}"></cover-image>
+    <view class="content">
+        <view class="name">组员一</view>
+        <view class="introduction">介绍介绍</view>
+    </view>
+  </view>
+  <view class="del" bindtap="delTap">del</view>
+</view>
+
+<view style="width:100%;height:20px;"></view>
+
+<view class="floatTry clearfix " style="left:{{nowX}};" 
+bindtouchstart='sTouch' bindtouchmove='mTouch' bindtouchend='eTouch'>
+  <view class="secContent" style="width:{{secContent_width}};">secContent</view>
+  <view class="secDel" style="width:{{secDel_width}};">secDel</view>
+</view>

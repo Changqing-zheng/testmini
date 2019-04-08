@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-swipe-cell": "../../miniprogram_npm/vant-weapp/swipe-cell/index",
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index"
+  }
 }

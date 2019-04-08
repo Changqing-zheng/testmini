@@ -5,9 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    date:"请选择时间",
+    columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
+    array: [1, 2, 3, 4,5],
+    index:0,
+    items: [
+      { name: 'TEL', value: '电话' },
+      { name: 'VIDEO', value: '视频', checked: 'true' }
+    ]
   },
-
+  DateChange:function(e) {
+    console.log("picker时间值改变，值变为："+e.detail.value);
+    this.setData({
+      date:e.detail.value
+    })
+  }, 
+  bindPickerChange(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  radioChange(e) {
+    console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

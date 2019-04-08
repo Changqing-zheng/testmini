@@ -1,2 +1,70 @@
 <!--pages/ApplyInterview/ApplyInterview.wxml-->
-<text>pages/ApplyInterview/ApplyInterview.wxml</text>
+
+<van-nav-bar
+  title="申请面试"
+  left-text="返回"
+  left-arrow
+  bind:click-left="onClickLeft"
+/>
+
+<view class="jianxi"></view>
+
+<van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder="请输入公司名"
+    border="{{ true }}"
+    label="面试公司"
+    bind:change="onChange"
+  />
+</van-cell-group>
+
+<view class="jianxi"></view>
+
+<view class="pickerCin">
+  <picker 
+    mode="date"
+    value="{{date}}"
+    start="1999-01-07"
+    end="2220-12-30"
+    bindchange='DateChange'>{{date}}</picker>
+</view>
+
+<view class="jianxi"></view>
+
+<van-cell-group>
+  <van-field
+    value="{{ username }}"
+    clearable
+    label="选择教师"
+    placeholder="请输入教师名"
+  />
+</van-cell-group>
+
+<view class="jianxi"></view>
+
+<view class="title_view">选择面试方式</view>
+<radio-group class="radio-group" bindchange="radioChange">
+  <view class="pickerCin" wx:for="{{items}}" wx:key="property">
+    <label class="radio">
+      {{item.value}}
+      <radio value="{{item.name}}" checked="{{item.checked}}"/>
+    </label>
+  </view>
+</radio-group>
+
+<view class="jianxi"></view>
+
+<view class="pickerCin">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        选择轮次：{{array[index]}}
+      </view>
+  </picker>
+</view>
+
+<view class="jianxi"></view>
+
+<van-button size="large" plain type="primary">取消</van-button>
+<view class="jianxi"></view>
+<van-button size="large" type="primary">确认</van-button>
