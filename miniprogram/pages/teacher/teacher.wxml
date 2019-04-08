@@ -5,6 +5,8 @@
       <view>面试者：XXX</view>
       <view>面试公司：XXX</view>
       <view>面试时间：XXX</view>
+      <view>面试方式：XXX</view>
+      <view>面试轮次：XXX</view>
     </view>
     <view slot="tags">
       <van-tag type="danger">未读</van-tag>
@@ -26,6 +28,8 @@
       <view>面试者：XXX</view>
       <view>面试公司：XXX</view>
       <view>面试时间：XXX</view>
+      <view>面试方式：XXX</view>
+      <view>面试轮次：XXX</view>
     </view>
     <view slot="tags">
       <van-tag type="important">已同意</van-tag>
