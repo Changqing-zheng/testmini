@@ -7,6 +7,7 @@
     "van-cell": "vant-weapp/cell",
     "van-cell-group": "vant-weapp/cell-group",
     "van-swipe-cell": "vant-weapp/swipe-cell",
-    "van-picker": "vant-weapp/picker"
+    "van-picker": "vant-weapp/picker",
+    "van-toast": "vant-weapp/toast"
   }
 }

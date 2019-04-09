@@ -1,4 +1,6 @@
 // pages/ApplyInterview/ApplyInterview.js
+
+import Toast from 'vant-weapp/toast/toast';
 Page({
 
   /**
@@ -6,7 +8,6 @@ Page({
    */
   data: {
     date:"请选择时间",
-    columns: ['杭州', '宁波', '温州', '嘉兴', '湖州'],
     array: [1, 2, 3, 4,5],
     index:0,
     items: [
@@ -20,14 +21,49 @@ Page({
       date:e.detail.value
     })
   }, 
-  bindPickerChange(e) {
+  bindPickerChange:function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value
     })
   },
-  radioChange(e) {
+  radioChange:function(e) {
     console.log('radio发生change事件，携带value值为：', e.detail.value)
+  },
+  onClickLeft:function(e){
+    wx.showModal({
+      title: '',
+      content: '左上角的按钮和取消按钮的功能本质应该是一样的',
+      success(res){
+        if(res.confirm){
+          console.log("用户点击确定")
+        }
+        else if(res.cancel){
+          console.log("用户点击取消")
+        }
+      }
+    })
+  },
+  upDateApply:function(e){
+    const toast = Toast.loading({
+      // type:loading,
+      duration:0,
+      loadingType:'spinner',
+      mask:true
+    });
+
+    let second = 2;
+    const timer = setInterval(() => {
+        second--;
+        if(!second){
+          clearInterval(timer);
+          toast.setData({
+            type:"success"
+          })
+          setTimeout(()=>{},500);
+          Toast.clear();
+        }
+    },1000)
   },
   /**
    * 生命周期函数--监听页面加载

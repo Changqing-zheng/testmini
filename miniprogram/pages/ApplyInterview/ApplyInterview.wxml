@@ -41,8 +41,6 @@
   />
 </van-cell-group>
 
-<view class="jianxi"></view>
-
 <view class="title_view">选择面试方式</view>
 <radio-group class="radio-group" bindchange="radioChange">
   <view class="pickerCin" wx:for="{{items}}" wx:key="property">
@@ -65,6 +63,7 @@
 
 <view class="jianxi"></view>
 
-<van-button size="large" plain type="primary">取消</van-button>
+<van-button size="large" plain type="primary" bindtap='onClickLeft'>取消</van-button>
 <view class="jianxi"></view>
-<van-button size="large" type="primary">确认</van-button>
+<van-button size="large" type="primary" bindtap='upDateApply' >确认</van-button>
+<van-toast id="van-toast" />
