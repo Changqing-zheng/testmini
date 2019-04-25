@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -42,6 +42,48 @@
 					"id": -1,
 					"name": "ProjectManagement",
 					"pathName": "pages/ProjectManagement/ProjectManagement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "refuse",
+					"pathName": "pages/refuse/refuse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "groupManagement",
+					"pathName": "pages/GroupManagement/GroupManagement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myInterview",
+					"pathName": "pages/MyInterview/MyInterview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "applyInterview",
+					"pathName": "pages/ApplyInterview/ApplyInterview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ProjectDetails",
+					"pathName": "pages/ProjectDetails/ProjectDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "GroupManagement",
+					"pathName": "pages/GroupManagement/GroupManagement",
 					"scene": null
 				}
 			]

@@ -1,5 +1,8 @@
 {
   "usingComponents": {
-    "van-dialog": "/miniprogram_npm/vant-weapp/dialog/index"
+    "van-tabbar": "vant-weapp/tabbar",
+    "van-tabbar-item": "vant-weapp/tabbar-item",
+    "van-cell": "vant-weapp/cell",
+    "van-cell-group": "vant-weapp/cell-group"
   }
 }

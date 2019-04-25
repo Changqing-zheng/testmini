@@ -1,35 +1,26 @@
 <van-cell-group>
   <van-cell
     title="项目名称"
-    value="oa小程序"
-    size="large"
-  />
-  <van-cell
-    title="项目截至时间"
-    value="2019.04.20"
+    value="{{detail[0].name}}"
     size="large"
   />
   <van-cell
     title="项目所需技术"
-    value="element-ui"
+    value="{{detail[0].skill}}"
     size="large"
   />
   <van-cell
     title="项目介绍"
-    value="项目概况是指在介绍或论述某个项目时,首先综合性地简要介绍项目的基本情况。比如一个招商项目,它比一般项目概况的内容较全面"
+    value="{{detail[0].msgw}}"
     size="large"
+    class="pro-detail"
   />
 </van-cell-group>
-<van-panel title="队伍名" desc="队员：xxx" status="队长:小吴" use-footer-slot>
-  <button class='add'>加入</button>
+<van-panel title="队伍名:{{item.name}}" desc="队员:{{item.player}}" status="队长:{{item.teamleader}}" use-footer-slot wx:for="{{team}}" wx:key="{{index}}">
+  <button class='add' type="primary">加入</button>
 </van-panel>
-<van-panel title="队伍名" desc="队员：xxx" status="队长:小吴" use-footer-slot>
-  <button class='add'>加入</button>
-</van-panel>
-<van-panel title="队伍名" desc="队员：xxx" status="队长:小吴" use-footer-slot>
-  <button class='add'>加入</button>
-</van-panel>
+
 <view class='create-btn'>
-  <van-button size="large" type='primary'>新建队伍</van-button>
+  <van-button size="large" type='primary' bindtap="createTeam">新建队伍</van-button>
 </view>
 

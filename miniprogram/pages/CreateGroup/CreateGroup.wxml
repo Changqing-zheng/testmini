@@ -7,7 +7,7 @@
     label="队伍名"
     placeholder="请输入队伍名"
     border="{{ false }}"
-
+    bind:change="iptTName"
   />
   <van-field
     value="{{ teamleader }}"
@@ -15,14 +15,16 @@
     placeholder="请输入队长名"
     required
     border="{{ false }}"
+    bind:change="iptLeaderName"
   />
   <van-field
-    value="{{ teamworker }}"
+    value="{{ player }}"
     label="添加队员"
     placeholder="请输入添加队员名"
     required
     border="{{ false }}"
+    bind:change="iptPlayer"
   />
-  <van-button size='large' type="primary">确认创建</van-button>
+  <van-button size='large' type="primary" bindtap="addGroup">确认创建</van-button>
 
 </van-cell-group>

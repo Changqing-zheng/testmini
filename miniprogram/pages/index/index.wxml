@@ -18,4 +18,4 @@
     border="{{ false }}"
   />
 </van-cell-group>
-<van-button type="info" size="large">登录   </van-button>
+<van-button type="info" size="large" bind:click="navigateToProManage">登录   </van-button>

@@ -1,23 +1,18 @@
-<!--pages/GroupManagement/GroupManagement.wxml-->
+<van-cell-group>
+  <van-cell title="{{item.name}}" 
+  value="" 
+  label="队长:{{item.teamleader}}; 队员:{{item.player}}" 
+  border="{{ true }}" 
+  wx:for="{{group}}" 
+  wx:key="{{index}}" 
+  data-groupId="{{item._id}}" 
+  bindtap="value">
+    <van-tag type="danger" size="medium" catchtap="delete">删除</van-tag>
+  </van-cell>
+</van-cell-group>
 
-<view>
-  <view style="width:100%;height:20px;"></view>
-  <view class="leftdel {{isleft? 'touch-active' : ''}}" bindtouchstart='touchstart' bindtouchmove='touchmove'>
-    <view class="member">
-      <cover-image class="profilePic" src="{{_url}}"></cover-image>
-      <view class="content">
-          <view class="name">组员一</view>
-          <view class="introduction">介绍介绍</view>
-      </view>
-    </view>
-    <view class="del" bindtap="delTap">del</view>
-  </view>
-</view>
-
-
-<view style="width:100%;height:20px;"></view>
-<view class="floatTry clearfix " style="left:{{nowX}};" 
-bindtouchstart='sTouch' bindtouchmove='mTouch' bindtouchend='eTouch'>
-  <view class="secContent" style="width:{{secContent_width}};">secContent</view>
-  <view class="secDel" style="width:{{secDel_width}};" bindtap='delTap'>secDel</view>
-</view>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="orders-o" bind:click="toProjectManagement">项目管理</van-tabbar-item>
+  <van-tabbar-item icon="friends-o" >队伍管理</van-tabbar-item>
+  <van-tabbar-item icon="home-o" bind:click="toMyInterview">我的面试</van-tabbar-item>
+</van-tabbar>
