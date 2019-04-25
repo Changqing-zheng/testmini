@@ -4,8 +4,7 @@
     "van-cell-group": "vant-weapp/cell-group",
     "van-tabbar": "vant-weapp/tabbar",
     "van-tabbar-item": "vant-weapp/tabbar-item",
-    "van-icon": "vant-weapp/icon",
-    "van-tag": "vant-weapp/tag",
-    "van-notice-bar": "vant-weapp/notice-bar"
-  }
+    "van-icon": "vant-weapp/icon"
+  },
+  "enablePullDownRefresh": true
 }

@@ -34,6 +34,9 @@ Page({
 
   },
   deleteGroup(event){
+    this.setData({
+      groupId: event.target.dataset.groupid
+    })
     teamList.doc(this.data.groupId).remove()
     .then(res => {
       wx.showToast({
