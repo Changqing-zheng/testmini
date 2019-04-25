@@ -1,3 +1,8 @@
+<van-notice-bar
+  scrollable="false"
+  text="如若您想要删除哪条数据，请先点击该条数据然后点击后面的删除按钮。"
+/>
+
 <van-cell-group>
   <van-cell title="{{item.name}}" 
   value="" 
@@ -6,8 +11,8 @@
   wx:for="{{group}}" 
   wx:key="{{index}}" 
   data-groupId="{{item._id}}" 
-  bindtap="value">
-    <van-tag type="danger" size="medium" catchtap="delete">删除</van-tag>
+  bindtap="getValue">
+    <van-icon slot="right-icon" name="delete" size="20px" catchtap='deleteGroup'/>
   </van-cell>
 </van-cell-group>
 

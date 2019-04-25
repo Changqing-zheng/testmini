@@ -2,10 +2,6 @@ const db = wx.cloud.database();
 const teamList = db.collection('teamList')
 
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     active: 1,
     group: [],
@@ -18,7 +14,7 @@ Page({
       })
     })
   },
-  value(event){
+  getValue(event){
     this.setData({
       groupId: event.target.dataset.groupid
     })
@@ -37,7 +33,7 @@ Page({
   onChange(event){
 
   },
-  delete(event){
+  deleteGroup(event){
     teamList.doc(this.data.groupId).remove()
     .then(res => {
       wx.showToast({
