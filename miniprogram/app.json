@@ -6,9 +6,7 @@
     "pages/CreateGroup/CreateGroup",
     "pages/GroupManagement/GroupManagement",
     "pages/ApplyInterview/ApplyInterview",
-    "pages/MyInterview/MyInterview",
-    "pages/teacher/teacher",
-    "pages/refuse/refuse"
+    "pages/MyInterview/MyInterview"
 
   ],
   "window": {

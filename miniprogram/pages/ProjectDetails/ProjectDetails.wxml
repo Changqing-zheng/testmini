@@ -11,7 +11,7 @@
   />
   <van-cell
     title="项目介绍"
-    value="{{detail[0].msgw}}"
+    value="{{detail[0].msg}}"
     size="large"
     class="pro-detail"
   />

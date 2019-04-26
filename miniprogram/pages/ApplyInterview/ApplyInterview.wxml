@@ -1,16 +1,22 @@
-<view class="jianxi"></view>
+<van-cell-group>
+  <van-field
+    value="{{ personName }}"
+    placeholder="请输入面试人姓名"
+    border="{{ true }}"
+    bind:change="getName"
+  />
+</van-cell-group>
+
 
 <van-cell-group>
   <van-field
     value="{{ value }}"
     placeholder="请输入公司名"
     border="{{ true }}"
-    label="面试公司"
     bind:change="onChange"
   />
 </van-cell-group>
 
-<view class="jianxi"></view>
 
 <view class="pickerCin">
   <picker 
@@ -19,10 +25,7 @@
     start="1999-01-07"
     end="2220-12-30"
     bindchange='DateChange'>{{date}}</picker>
-
 </view>
-
-<view class="jianxi"></view>
 
 <view class="pickerCin">
   <picker bindchange="selectTeacher" mode="selector" value="{{teacherIndex}}" range="{{teacherList}}">

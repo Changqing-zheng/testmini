@@ -18,7 +18,8 @@ Page({
     ],
     company: "",
     teacherName: "",
-    interviewWay: 'TEL'
+    interviewWay: 'TEL',
+    personName: ''
   },
   DateChange:function(e) {
     this.setData({
@@ -42,7 +43,9 @@ Page({
         date: this.data.date,
         teacher: this.data.teacherList[this.data.teacherIndex],
         way: this.data.interviewWay,
-        time: this.data.timeIndex + 1
+        time: this.data.timeIndex + 1,
+        person: this.data.personName,
+        state: "进行中..."
       }
     })
     .then(res => {
@@ -67,6 +70,11 @@ Page({
   selectTeacher(event){
     this.setData({
       teacherIndex: event.detail.value
+    })
+  },
+  getName(event){
+    this.setData({
+      personName: event.detail
     })
   }
 })
