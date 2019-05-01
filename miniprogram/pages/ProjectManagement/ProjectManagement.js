@@ -8,7 +8,7 @@ Page({
    */
   data: {
     active: 0,
-    pro:[]
+    pro: []
   },
   onLoad:function(options){
     proList.get().then(res => {
@@ -17,8 +17,21 @@ Page({
       })
     })
   },
-  onChange(event){
-
+  search(event){
+    proList.where({
+      name: db.RegExp({
+        regexp: event.detail,
+        options: 'i',
+      })
+    }).get()
+    .then(res => {
+      this.setData({
+        pro: res.data
+      })
+    })
+    .catch(error => {
+      console.log(error)
+    })
   },
   toApplyInterview(event){
     wx.navigateTo({
@@ -39,5 +52,8 @@ Page({
     wx.navigateTo({
       url: '../ProjectDetails/ProjectDetails?projectId=' + event.target.dataset.projectid,
     })
+  },
+  onChange(event) {
+
   }
 })

@@ -4,9 +4,8 @@
     required
     clearable
     label="用户名"
-    icon="question-o"
     placeholder="请输入用户名"
-    bind:click-icon="onClickIcon"
+    bind:change="getUsername"
   />
 
   <van-field
@@ -15,7 +14,9 @@
     label="密码"
     placeholder="请输入密码"
     required
-    border="{{ false }}"
+    border="{{ true }}"
+    bind:change="getPassword"
+    error-message="{{error}}"
   />
 </van-cell-group>
-<van-button type="info" size="large" bind:click="navigateToProManage">登录   </van-button>
+<van-button type="info" size="large" bind:click="navigateToProManage">登录</van-button>

@@ -19,7 +19,8 @@ Page({
     company: "",
     teacherName: "",
     interviewWay: 'TEL',
-    personName: ''
+    personName: '',
+    reason: "暂无"
   },
   DateChange:function(e) {
     this.setData({
@@ -45,7 +46,8 @@ Page({
         way: this.data.interviewWay,
         time: this.data.timeIndex + 1,
         person: this.data.personName,
-        state: "进行中..."
+        state: "进行中...",
+        reason: this.data.reason
       }
     })
     .then(res => {

@@ -12,7 +12,7 @@
 	},
 	"appid": "wx670fbf9577a985f0",
 	"projectname": "testmini",
-	"libVersion": "2.2.5",
+	"libVersion": "2.4.0",
 	"condition": {
 		"search": {
 			"current": -1,

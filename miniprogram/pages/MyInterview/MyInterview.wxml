@@ -1,7 +1,7 @@
 <van-cell-group>
   <van-cell title="{{item.company}}" 
   value="{{item.date}}" 
-  label="面试教师：{{item.teacher}}, 面试方式:{{item.way}}, 面试轮次:{{item.time}}, 当前状态:{{item.state}}" 
+  label="面试教师：{{item.teacher}}, 面试方式:{{item.way}}, 面试轮次:{{item.time}}, 当前状态:{{item.state}} " 
   border="{{ true }}" 
   wx:for="{{interviewList}}"
   wx:key="{{index}}" />

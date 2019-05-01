@@ -3,6 +3,7 @@
   placeholder="请输入搜索关键词"
   use-action-slot
   bind:search="onSearch"
+  bind:change='search'
 >
   <view slot="action" bind:tap="toApplyInterview">申请面试</view>
 </van-search>
