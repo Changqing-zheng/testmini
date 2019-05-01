@@ -16,11 +16,11 @@
     class="pro-detail"
   />
 </van-cell-group>
+
 <van-panel title="队伍名:{{item.name}}" desc="队员:{{item.player}}" status="队长:{{item.teamleader}}" use-footer-slot wx:for="{{team}}" wx:key="{{index}}">
-  <!-- <button class='add' type="primary">加入</button> -->
 </van-panel>
 
-<view class='create-btn'>
+<view>
   <van-button size="large" type='primary' bindtap="createTeam">新建队伍</van-button>
 </view>
 

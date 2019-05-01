@@ -7,28 +7,32 @@ Page({
   data: {
     detail: [],
     team: [],
-    teamId: ""
+    teamId: "",
+    id: ''
   },
   createTeam(event){
     wx.navigateTo({
       url: '../CreateGroup/CreateGroup?teamId=' + this.data.teamId,
     })
   },
-  onLoad: function(options){
+  getDetail(id){
     proList.where({
-      _id: options.projectId
+      _id: id
     }).get().then(res => {
       this.setData({
         detail: res.data,
-        teamId: options.projectId
+        teamId: id
       })
     })
     teamList.where({
-      teamid: options.projectId
+      teamid: id
     }).get().then(res => {
       this.setData({
         team: res.data
       })
     })
+  },
+  onLoad: function(options){
+    this.getDetail(options.projectId)
   }
 })
