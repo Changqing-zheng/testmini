@@ -7,12 +7,15 @@ Page({
     group: [],
     groupId: ''
   },
-  onLoad: function(options){
+  getGroup(event){
     teamList.get().then(res => {
       this.setData({
         group: res.data
       })
     })
+  },
+  onLoad: function(options){
+    this.getGroup();
   },
   getValue(event){
     this.setData({
@@ -44,6 +47,7 @@ Page({
         icon: 'success',
         duration: 1000,
       })
+      this.getGroup();
     })
     .catch(error => {
       console.log(error)
