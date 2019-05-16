@@ -21,7 +21,6 @@ Page({
     this.setData({
       groupId: event.target.dataset.groupid
     })
-    console.log(this.data.groupId)
   },
   toProjectManagement(event){
     wx.navigateTo({
@@ -37,7 +36,7 @@ Page({
 
   },
   deleteGroup(event){
-    this.setData({
+      this.setData({
       groupId: event.target.dataset.groupid
     })
     teamList.doc(this.data.groupId).remove()

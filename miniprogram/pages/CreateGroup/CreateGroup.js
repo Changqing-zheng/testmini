@@ -7,7 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    teamId: "",
     teamname: "",
     teamleader: "",
     player: ""
@@ -24,7 +23,6 @@ Page({
   addGroup(event){
     teamList.add({
       data: {
-        teamid: this.data.teamId,
         name: this.data.teamname,
         teamleader: this.data.teamleader,
         player: this.data.player

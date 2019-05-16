@@ -8,30 +8,27 @@ Page({
     error: ''
   },
   navigateToProManage(event){
-    wx.redirectTo({
-      url: '../ProjectManagement/ProjectManagement',
+    login.where({
+      username: this.data.username,
+      password: this.data.password
+    }).get()
+    .then(res => {
+      if(res.data.length == 0){
+        this.setData({
+          error: "用户名或密码不存在"
+        })
+      }else {
+        this.setData({
+          error: ""
+        })
+        wx.redirectTo({
+          url: '../ProjectManagement/ProjectManagement',
+        })
+      }
     })
-    // login.where({
-    //   username: this.data.username,
-    //   password: this.data.password
-    // }).get()
-    // .then(res => {
-    //   if(res.data.length == 0){
-    //     this.setData({
-    //       error: "用户名或密码不存在"
-    //     })
-    //   }else {
-    //     this.setData({
-    //       error: ""
-    //     })
-    //     wx.redirectTo({
-    //       url: '../ProjectManagement/ProjectManagement',
-    //     })
-    //   }
-    // })
-    // .catch(error => {
-    //   console.log(error)
-    // })
+    .catch(error => {
+      console.log(error)
+    })
   },
   getUsername(event){
     this.setData({
