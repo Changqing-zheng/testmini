@@ -13,6 +13,8 @@
 	"appid": "wx670fbf9577a985f0",
 	"projectname": "testmini",
 	"libVersion": "2.4.0",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -30,7 +32,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 7,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -60,14 +62,14 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 4,
 					"name": "myInterview",
 					"pathName": "pages/MyInterview/MyInterview",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 5,
 					"name": "applyInterview",
 					"pathName": "pages/ApplyInterview/ApplyInterview",
 					"query": "",
@@ -84,6 +86,7 @@
 					"id": -1,
 					"name": "GroupManagement",
 					"pathName": "pages/GroupManagement/GroupManagement",
+					"query": "",
 					"scene": null
 				}
 			]

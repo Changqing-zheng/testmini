@@ -6,8 +6,8 @@
     "pages/CreateGroup/CreateGroup",
     "pages/GroupManagement/GroupManagement",
     "pages/ApplyInterview/ApplyInterview",
-    "pages/MyInterview/MyInterview"
-
+    "pages/MyInterview/MyInterview",
+    "pages/BusyTime/BusyTime"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -15,5 +15,6 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "学生端",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

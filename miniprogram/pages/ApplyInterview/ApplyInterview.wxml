@@ -30,7 +30,7 @@
 <view class="pickerCin">
   <picker bindchange="selectTeacher" mode="selector" value="{{teacherIndex}}" range="{{teacherList}}">
     <view class="picker">
-      选择教师: {{teacherList[teacherIndex]}}
+      {{teacher}}
     </view>
   </picker>
 </view>

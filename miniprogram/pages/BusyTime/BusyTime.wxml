@@ -1,0 +1,88 @@
+<text class="title">该教师的忙碌时间表</text>
+
+<van-field
+  value="{{input0}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="9:00-10:00:"
+/>
+<van-field
+  value="{{input1}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="10:00-11:00:"
+/>
+<van-field
+  value="{{input2}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="11:00-12:00:"
+/>
+<van-field
+  value="{{input3}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="12:00-13:00:"
+/>
+<van-field
+  value="{{input4}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="13:00-14:00:"
+/>
+<van-field
+  value="{{input5}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="14:00-15:00:"
+/>
+<van-field
+  value="{{input6}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="15:00-16:00:"
+/>
+<van-field
+  value="{{input7}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="16:00-17:00:"
+/>
+<van-field
+  value="{{input8}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="17:00-18:00:"
+/>
+<van-field
+  value="{{input9}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="18:00-19:00:"
+/>
+<van-field
+  value="{{input10}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="19:00-20:00:"
+/>
+<van-field
+  value="{{input11}}"
+  type="textarea"
+  autosize
+  readonly="{{true}}"
+  label="20:00-21:00 "
+/>
+
+<van-button bind:tap="makeSure" type="primary" size="large">确认时间不冲突</van-button>

@@ -8,8 +8,9 @@ Page({
   data: {
     value:'',
     date:"请选择时间",
+    teacher: "请选择教师",
     array: [1, 2, 3, 4, 5],
-    teacherList: ["谢老师", "小吴老师", "董老师", "小冯老师"],
+    teacherList: ["teacherXie", "teacherXiaowu", "teacherDong", "teacherXiaofeng"],
     timeIndex:0,
     teacherIndex: 0,
     items: [
@@ -70,8 +71,13 @@ Page({
     })
   },
   selectTeacher(event){
+    console.log(event)
+    wx.navigateTo({
+      url: '../BusyTime/BusyTime?teacher=' + this.data.teacherList[event.detail.value],
+    })
     this.setData({
-      teacherIndex: event.detail.value
+      teacherIndex: event.detail.value,
+      teacher: this.data.teacherList[event.detail.value]
     })
   },
   getName(event){
